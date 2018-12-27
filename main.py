@@ -12,7 +12,7 @@ def read_mult(f_in, D=8000):
             X[i, int(segs[0])] = float(segs[1])
     arr_max = np.amax(X, axis=1)
     X = (X.T/arr_max).T
-    return X
+    return X.T
 
 
 def get_mult():
